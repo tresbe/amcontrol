@@ -1,0 +1,7 @@
+parameters:
+#    amcontrol.example.class: Amcontrol\AmcontrolBundle\Example
+
+services:
+#    amcontrol.example:
+#        class: %amcontrol.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

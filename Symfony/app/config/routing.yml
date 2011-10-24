@@ -2,6 +2,10 @@ AmcontrolBundle:
     resource: "@AmcontrolBundle/Resources/config/routing.yml"
     prefix:   /
 
+_listas:
+    resource: @AmcontrolBundle/Resources/config/listas.yml
+    prefix:   /listas
+
 # Internal routing configuration to handle ESI
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"

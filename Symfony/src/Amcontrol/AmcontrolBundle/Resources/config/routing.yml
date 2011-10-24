@@ -1,3 +1,6 @@
 AmcontrolBundle_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: AmcontrolBundle:Default:index }
+lista:
+    pattern: /lista
+    defaults: { _controller: AmcontrolBundle:Lista:index }

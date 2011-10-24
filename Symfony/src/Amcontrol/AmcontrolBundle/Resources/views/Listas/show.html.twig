@@ -1,0 +1,61 @@
+<h1>Listas</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Mu</th>
+            <td>{{ entity.mu }}</td>
+        </tr>
+        <tr>
+            <th>Descripcion</th>
+            <td>{{ entity.descripcion }}</td>
+        </tr>
+        <tr>
+            <th>Actividad</th>
+            <td>{{ entity.actividad }}</td>
+        </tr>
+        <tr>
+            <th>Comentarios</th>
+            <td>{{ entity.comentarios }}</td>
+        </tr>
+        <tr>
+            <th>Sd</th>
+            <td>{{ entity.sd }}</td>
+        </tr>
+        <tr>
+            <th>Tipo</th>
+            <td>{{ entity.tipo }}</td>
+        </tr>
+        <tr>
+            <th>Nivel</th>
+            <td>{{ entity.nivel }}</td>
+        </tr>
+        <tr>
+            <th>Responsable</th>
+            <td>{{ entity.responsable }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('listas') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('listas_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('listas_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

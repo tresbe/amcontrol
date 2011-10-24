@@ -1,0 +1,30 @@
+listas:
+    pattern:  /
+    defaults: { _controller: "AmcontrolBundle:Listas:index" }
+
+listas_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "AmcontrolBundle:Listas:show" }
+
+listas_new:
+    pattern:  /new
+    defaults: { _controller: "AmcontrolBundle:Listas:new" }
+
+listas_create:
+    pattern:  /create
+    defaults: { _controller: "AmcontrolBundle:Listas:create" }
+    requirements: { _method: post }
+
+listas_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "AmcontrolBundle:Listas:edit" }
+
+listas_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "AmcontrolBundle:Listas:update" }
+    requirements: { _method: post }
+
+listas_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "AmcontrolBundle:Listas:delete" }
+    requirements: { _method: post }

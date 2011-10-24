@@ -1,0 +1,51 @@
+<h1>Listas list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Mu</th>
+            <th>Descripcion</th>
+            <th>Actividad</th>
+            <th>Comentarios</th>
+            <th>Sd</th>
+            <th>Tipo</th>
+            <th>Nivel</th>
+            <th>Responsable</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('listas_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.mu }}</td>
+            <td>{{ entity.descripcion }}</td>
+            <td>{{ entity.actividad }}</td>
+            <td>{{ entity.comentarios }}</td>
+            <td>{{ entity.sd }}</td>
+            <td>{{ entity.tipo }}</td>
+            <td>{{ entity.nivel }}</td>
+            <td>{{ entity.responsable }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('listas_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('listas_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('listas_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>

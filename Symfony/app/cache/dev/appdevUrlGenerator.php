@@ -23,6 +23,8 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        '_demo' => true,
        '_demo_hello' => true,
        '_demo_contact' => true,
+       '_assetic_b2f47c9' => true,
+       '_assetic_b2f47c9_0' => true,
        '_wdt' => true,
        '_profiler_search' => true,
        '_profiler_purge' => true,
@@ -113,6 +115,16 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function get_demo_contactRouteInfo()
     {
         return array(array (), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\DemoController::contactAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/demo/contact',  ),));
+    }
+
+    private function get_assetic_b2f47c9RouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'assetic.controller:render',  'name' => 'b2f47c9',  'pos' => NULL,  '_format' => 'css',), array (), array (  0 =>   array (    0 => 'text',    1 => '/css/b2f47c9.css',  ),));
+    }
+
+    private function get_assetic_b2f47c9_0RouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'assetic.controller:render',  'name' => 'b2f47c9',  'pos' => 0,  '_format' => 'css',), array (), array (  0 =>   array (    0 => 'text',    1 => '/css/b2f47c9_main_1.css',  ),));
     }
 
     private function get_wdtRouteInfo()

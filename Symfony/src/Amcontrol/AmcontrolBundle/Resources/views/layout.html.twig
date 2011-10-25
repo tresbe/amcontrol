@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	{% stylesheets
+	'@AmcontrolBundle/Resources/public/css/main.css'
+	%}
+
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
+
+	{% endstylesheets %}
+
+        <title>{% block title %}AMControl{% endblock %}</title>
+       
+    </head>
+    <body>
+        <div id="symfony-wrapper">
+            <div id="symfony-header">
+               
+            </div>
+
+
+
+           
+
+            <div class="symfony-content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            {% if code is defined %}
+                
+            {% endif %}
+        </div>
+    </body>
+</html>
